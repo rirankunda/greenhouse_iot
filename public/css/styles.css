@@ -1,0 +1,148 @@
+#house{
+    float:center ;
+}
+
+.wp-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.wp-table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.wp-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* .wp-table th:first-child,  */
+/* .wp-table td:first-child {
+    padding-left: 16px;
+} */
+
+
+.wp-table td, 
+.wp-table th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    font-size: large;
+
+}
+
+.wp-table th {
+    font-weight: bold;
+}
+ 
+.wp-table {
+    font-size: 13px!important;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 0;
+}
+
+#watering{
+    font-size: 20;
+}
+.p1{
+    line-height: 500%;
+}
+
+
+
+
+a.button {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+a.button:hover,
+a.button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+a.button:hover {
+  transform: translateY(-1px);
+}
+
+a.button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+body{
+    background-image: url("neutre.jpg");
+}
+h1 {
+    text-align: center;
+    color: green;
+}
+h2{
+    color:green;
+}
+
+
+:root {
+    --success: #00b894;
+    --progress: #e17055;
+  }
+  
+  .progressbar-wrapper {
+    background-color: #dfe6e9;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+  }
+  
+  .progressbar {
+    background-color: var(--progress);
+    color: white;
+    padding: 1rem;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+  
+  .progressbar[title="downloading"] {
+     background-color: var(--progress);
+  }
+  
+  .progressbar[title="downloaded"] {
+     background-color: var(--success);
+  }
+    
+  .mp4 {
+    width: 100%;
+  }
+  

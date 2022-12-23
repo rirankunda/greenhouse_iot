@@ -1,0 +1,82 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+        
+    <h1>GREEN HOUSE</h1>
+
+    <table class="wp-table">
+        <tr>
+            <th>Temperature</th>
+            <th>Humidity</th>
+            <th>Volume</th>
+        </tr>
+        <tr>
+            <td id="temp"><%=temp%>°C</td>
+            <td id="hum"><%=hum%>%</td>
+            <td id="dist"><%=dist%>L
+                <progress id="file" max="150" value=<%=dist%> >  </progress>
+               </td>
+        </tr>
+    </table>
+
+    <h2>Default parameters</h2>
+    <p>
+        <label id="humidityy">Minimum humidity before watering :</label>   <input type="text" id="humidity" >
+    </p>
+    <p>
+        <label id="tankk">Minimum tank value before alert : <input type="text" id="tank" ></label>
+    </p>
+
+
+
+    <button type="button" onclick="getValue();">Submit</button>
+
+
+
+
+<p>
+<a href="http://localhost:8080" class="button">Back</a>
+</p>
+
+
+
+</body>
+
+
+
+<script>
+
+      function getValue() {
+    // Sélectionner l'élément input et récupérer sa valeur
+    var input_humidity = document.getElementById("humidity").value;
+    var input_tank=document.getElementById("tank").value;
+    a=parseInt(document.getElementById("hum").innerText,10);
+    b=parseInt(document.getElementById("dist").innerText,10)
+    //alert(Date());
+    if (a<=input_humidity){
+        if (b<=input_tank){
+            alert("Soil too dry, watering is necessary and you have not enough water in your tank ")
+        }
+        if (b>input_tank){
+        alert("Soil too dry, watering is necessary")
+        watering()
+        }
+        
+    }
+    if (b<=input_tank){
+        alert("not enough water in the tank")
+    }
+ 
+
+}
+        function watering(){
+            document.getElementById('date').innerHTML=Date();
+
+        }    
+    </script>
+
+
+
+
+
